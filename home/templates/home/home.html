@@ -1,0 +1,202 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reju Subedi | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+</head>
+
+<body>
+
+    <!-- Sticky Navigation -->
+    <header class="navbar-header">
+        <nav class="nav-container">
+            <a href="#home" class="logo">Reju<span>.dev</span></a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact" class="btn-nav">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <span class="status-badge"><i class="fa-solid fa-code"></i> BSc CSIT Student</span>
+                <h1>Hi, I'm <span class="highlight">Reju Subedi</span> 👋</h1>
+                <h2>Aspiring Web & Software Developer</h2>
+                <p>
+                    I build web applications with Python and Django. Passionate about clean code, 
+                    continuous learning, and turning ideas into functional software.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:rejusubedi@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="about-card">
+                <p>
+                    I am a <strong>BSc CSIT</strong> student with a keen interest in software engineering and web development. 
+                    I focus on building functional backend applications using Python and Django while creating clean, user-friendly frontend interfaces.
+                </p>
+                <p>
+                    My goal is to continue growing as a developer by collaborating on real-world projects, solving complex problems, and contributing to meaningful software products.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-title">
+                <h2>Technical Skills</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-tag"><i class="fa-brands fa-python"></i> Python</div>
+                <div class="skill-tag"><i class="fa-solid fa-cubes"></i> Django</div>
+                <div class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5</div>
+                <div class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+                <div class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</div>
+                <div class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git & GitHub</div>
+                <div class="skill-tag"><i class="fa-solid fa-brain"></i> Problem Solving</div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-title">
+                <h2>Featured Projects</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Django</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                        </div>
+                        <h3>Personal Portfolio Website</h3>
+                        <p>A responsive portfolio built with Django to showcase developer profile, technical skills, and projects.</p>
+                        <div class="project-links">
+                            <a href="#home" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>SQLite</span>
+                        </div>
+                        <h3>Student Management System</h3>
+                        <p>A web application enabling full CRUD operations to record, manage, and update student profiles easily.</p>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Algorithms</span>
+                        </div>
+                        <h3>Python Practice Programs</h3>
+                        <p>A structured repository of scripts and algorithms built while mastering object-oriented design and problem-solving.</p>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies" class="section">
+            <div class="section-title">
+                <h2>Hobbies & Interests</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <i class="fa-solid fa-microchip"></i>
+                    <h4>Tech Exploration</h4>
+                    <p>Staying updated with modern frameworks and tools.</p>
+                </div>
+                <div class="hobby-card">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h4>Content Creation</h4>
+                    <p>Writing and sharing insights on technology.</p>
+                </div>
+                <div class="hobby-card">
+                    <i class="fa-solid fa-globe"></i>
+                    <h4>Web Experimentation</h4>
+                    <p>Building small side projects and interactive prototypes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="contact-box">
+                <h2>Let's Connect</h2>
+                <p>Have an idea, opportunity, or question? Feel free to reach out directly.</p>
+                <a href="mailto:rejusubedi@gmail.com" class="btn btn-primary contact-btn">
+                    <i class="fa-regular fa-envelope"></i> rejusubedi@gmail.com
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Reju Subedi. Designed & Built with Django.</p>
+    </footer>
+
+</body>
+</html>
